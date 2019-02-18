@@ -2,3 +2,4 @@ import pandas as pd
 df= pd.read_excel('C:\\Users\\Micha\\Desktop\\eguk_database.xlsx')
 df['combined']=df['AU1'].astype(str)+'_'+df['AU2']+'_'+df['AU3']+df['AU4']+df['AU5']+df['AU6']+df['AU7']+df['AU8']+df['AU9']+df['AU10']+df['AU11']
 df.fillna(0)
+df['combined'].value_counts() //Expected to return unique values but does not
