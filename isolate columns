@@ -3,3 +3,16 @@ df= pd.read_excel('C:\\Users\\Micha\\Desktop\\eguk_database.xlsx')
 df['combined']=df['AU1'].astype(str)+'_'+df['AU2']+'_'+df['AU3']+df['AU4']+df['AU5']+df['AU6']+df['AU7']+df['AU8']+df['AU9']+df['AU10']+df['AU11']
 df.fillna(0)
 df['combined'].value_counts() //Expected to return unique values but does not
+
+
+df = df.drop('AU1', 1) //Drop Old Tables
+df = df.drop('AU2', 1)
+df = df.drop('AU3', 1)
+df = df.drop('AU4', 1)
+df = df.drop('AU5', 1)
+df = df.drop('AU6', 1)
+df = df.drop('AU7', 1)
+df = df.drop('AU8', 1)
+df = df.drop('AU9', 1)
+df = df.drop('AU10', 1)
+df = df.drop('AU11', 1)
