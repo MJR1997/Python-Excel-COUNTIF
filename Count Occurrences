@@ -1,0 +1,6 @@
+>>> import pandas as pd
+>>> import numpy as np
+>>> df=pd.read_excel('Path to file')
+>>> new_frame=pd.concat([df['Sheetname'], df['Sheetname'], df['Sheetname']])
+>>> np_temp=np.array(list(new_frame))
+>>> np.count_nonzero(np_temp == "Value")
